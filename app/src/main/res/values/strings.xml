@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Cool News App</string>
+    <string name="internetConnectionMessage">no internet</string>
+    <string name="nothingToShowMessage">nothing to show</string>
+</resources>
