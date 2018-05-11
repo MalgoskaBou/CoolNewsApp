@@ -1,19 +1,18 @@
 package com.awesomeapp.android.coolnewsapp;
 
 import android.app.LoaderManager;
+import android.app.LoaderManager.LoaderCallbacks;
 import android.content.Context;
+import android.content.Loader;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.app.LoaderManager.LoaderCallbacks;
-import android.content.Loader;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity  implements LoaderCallbacks<
 
     private static final String REQUEST_URL = "http://content.guardianapis.com/search?show-tags=contributor&api-key=8d158f50-c87b-451a-8cd6-eb6fad30df86";
     private static final int LOADER_NEWS_ID = 1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

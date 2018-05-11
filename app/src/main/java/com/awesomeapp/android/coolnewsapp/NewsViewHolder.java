@@ -22,4 +22,3 @@ public class NewsViewHolder extends RecyclerView.ViewHolder {
 
     }
 }
-
