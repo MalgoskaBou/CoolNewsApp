@@ -1,7 +1,10 @@
 package com.awesomeapp.android.coolnewsapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,20 +31,28 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final NewsViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final NewsViewHolder holder, final int position) {
 
         holder.articleAuthor.setText(newsList.get(position).getAuthorName());
-        holder.articleDate.setText(newsList.get(position).getDateOfCreate());
         holder.articleTitle.setText(newsList.get(position).getArticleTitle());
         holder.articleSection.setText(newsList.get(position).getSectionName());
+
+        String dataOfArticle = newsList.get(position).getDateOfCreate();
+        String formatedData = dataOfArticle.replace("T", " ").replace("Z", "");
+        holder.articleDate.setText(formatedData);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                //click
+                String url = newsList.get(position).getWebUrl();
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                v.getContext().startActivity(i);
             }
         });
+
+        holder.colorItem.setBackgroundColor(ContextCompat.getColor(this.context, Colours.choseColour(position)));
     }
 
     @Override

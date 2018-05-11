@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallMargin">8dp</dimen>
+    <dimen name="matchContraint">0dp</dimen>
+    <dimen name="bigTextSize">18sp</dimen>
+    <dimen name="colorViewDp">40dp</dimen>
+</resources>

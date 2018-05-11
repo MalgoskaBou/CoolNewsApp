@@ -6,12 +6,14 @@ public class NewsModel {
     private String sectionName;
     private String authorName;
     private String dateOfCreate;
+    private String webUrl;
 
-    NewsModel(String articleTitle, String sectionName, String authorName, String dateOfCreate) {
+    NewsModel(String articleTitle, String sectionName, String authorName, String dateOfCreate, String webUrl) {
         this.articleTitle = articleTitle;
         this.sectionName = sectionName;
         this.authorName = authorName;
         this.dateOfCreate = dateOfCreate;
+        this.webUrl = webUrl;
     }
 
     public String getArticleTitle() {
@@ -28,5 +30,9 @@ public class NewsModel {
 
     public String getDateOfCreate() {
         return dateOfCreate;
+    }
+
+    public String getWebUrl() {
+        return webUrl;
     }
 }

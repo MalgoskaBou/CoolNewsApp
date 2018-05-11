@@ -145,8 +145,9 @@ public final class NewsQuery {
                     urnewsAuthor = currentNewsDataTags.getString("webTitle");
                 }
 
+                String newsUrl = currentNewsData.getString("webUrl");
                // add data to list
-                newsList.add(new NewsModel(newsTitle, newsSection, urnewsAuthor, newsDate));
+                newsList.add(new NewsModel(newsTitle, newsSection, urnewsAuthor, newsDate, newsUrl));
             }
 
         } catch (JSONException e) {
