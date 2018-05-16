@@ -3,4 +3,39 @@
     <string name="internetConnectionMessage">no internet</string>
     <string name="nothingToShowMessage">nothing to show</string>
     <string name="sampleText">TextView</string>
+
+    <string name="settings">SETTINGS</string>
+
+    <!-- Strings For Minimum Magnitude Preference [CHAR LIMIT=30] -->
+    <string name="settings_news_limit_label">News to show limit</string>
+    <string name="settings_news_limit_key" translatable="false">page-size</string>
+    <string name="settings_news_limit_default" translatable="false">5</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_topic_label">Topic</string>
+    <string name="settings_order_by_topic_key" translatable="false">section</string>
+    <string name="settings_order_by_topic_default" translatable="false">@string/settings_order_by_politics_value</string>
+
+    <!-- Label for order-by Politics -->
+    <string name="settings_order_by_politics_label">Politics</string>
+    <string name="settings_order_by_politics_value" translatable="false">politics</string>
+
+    <!-- Label for order-by Business -->
+    <string name="settings_order_by_all_label">All</string>
+    <string name="settings_order_by_all_value" translatable="false">all</string>
+
+    <!-- Label for order-by Business -->
+    <string name="settings_order_by_business_label">Business</string>
+    <string name="settings_order_by_business_value" translatable="false">business</string>
+
+    <!-- Label for order-by Sport -->
+    <string name="settings_order_by_sport_label">Sport</string>
+    <string name="settings_order_by_sport_value" translatable="false">sport</string>4
+
+    <string name="api_key">api-key</string>
+    <string name="api_key_value">test</string>
+
+    <string name="show_tags_author_key">show-tags</string>
+    <string name="show_tags_author_value">contributor</string>
+
 </resources>
